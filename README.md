@@ -4,7 +4,9 @@ Video: [Install Jekyll on Apple Silicon](https://studio.youtube.com/channel/UCo6
 
 ## Install homebrew
 Think of Homebrew as an app store for the command line. Everything you install for Jekyll will be free and open source.
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 ### Finalize homebrew
 Note: be sure to replace `[username]` with the username you use on your Mac.
@@ -16,47 +18,71 @@ export SDKROOT=$(xcrun --show-sdk-path)
 
 ## Install Ruby 3.0.x
 You can see the version of Ruby pre-installed with your Mac, by typing:
-`ruby -v`
+```
+ruby -v
+```
 
 ### You will need to install your own copy of Ruby using Homebrew with the following command:
-`brew install ruby@3.0`
+```
+brew install ruby@3.0
+```
 
 ### Finalzie the Ruby installation
 Type:
-`echo $SHELL`
+```
+echo $SHELL
+```
 
 The result will be `zsh` or `bash`
 
 For zsh, type:
-`echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc`
+```
+echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+```
 
 For bash, type:
-`echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile`
+```
+echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile
+```
 
 Type:
-`exit`
+```
+exit
+```
 
 Quit terminal
 
 Run terminal again and type: 
-`ruby -v`
+```
+ruby -v
+```
 (make sure it is ruby 3.0.x)
 
 ## Install Jekyll and Bundler
 Type:
-`gem install --user-install bundler jekyll`
+```
+gem install --user-install bundler jekyll
+```
 
 Type:
-`echo $SHELL`
+```
+echo $SHELL
+```
 
-For zshm, type:
-`echo 'export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"' >> ~/.zshrc`
+For zsh, type:
+```
+echo 'export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"' >> ~/.zshrc
+```
 
 For bash, type:
-`echo 'export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"' >> ~/.bash_profile`
+```
+echo 'export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"' >> ~/.bash_profile
+```
 
 Type:
-`gem env`
+```
+gem env
+```
 Look for the "GEM PATHS" section and make sure they all refer to 3.0.0
 
 ### Create a folder for your new Jekyll site
