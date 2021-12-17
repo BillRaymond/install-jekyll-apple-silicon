@@ -1,7 +1,12 @@
-### Install homebrew
+# This is the documentation for my YouTube video, titled "Install Jekyll on Apple Silicon"
+Video: [Install Jekyll on Apple Silicon](https://studio.youtube.com/channel/UCo63gWfWRfEciJ98mJLIU0Q)
+
+
+## Install homebrew
+Think of Homebrew as an app store for the command line. Everything you install for Jekyll will be free and open source.
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-## Finalize homebrew
+### Finalize homebrew
 Note: be sure to replace `[username]` with the username you use on your Mac.
 ```
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/[yourusername]/.zprofile
@@ -13,10 +18,10 @@ export SDKROOT=$(xcrun --show-sdk-path)
 You can see the version of Ruby pre-installed with your Mac, by typing:
 `ruby -v`
 
-## You will need to install your own copy of Ruby using Homebrew with the following command:
+### You will need to install your own copy of Ruby using Homebrew with the following command:
 `brew install ruby@3.0`
 
-## Finalzie the Ruby installation
+### Finalzie the Ruby installation
 Type:
 `echo $SHELL`
 
@@ -54,7 +59,7 @@ Type:
 `gem env`
 Look for the "GEM PATHS" section and make sure they all refer to 3.0.0
 
-## Create a folder for your new Jekyll site
+### Create a folder for your new Jekyll site
 Type:
 ```
 cd desktop
@@ -62,7 +67,7 @@ mkdir jekylltest
 cd jekylltest
 ```
 
-## If you are even thinking of using Git, create a .gitignore file
+### If you are even thinking of using Git, create a .gitignore file
 Create a `.gitignore` file at the rooy of your `jekylltest` folder
 
 Add the following lines to the file:
@@ -76,7 +81,7 @@ _site/
 vendor/
 ```
 
-## Create a Jekyll site based on the default Minima theme
+### Create a Jekyll site based on the default Minima theme
 You will create a Jekyll site based on the default Minima theme that ships with Jekyll.
 If you want to choose a different type of site (different theme, blank site, etc), follow this link:
 https://jekyllrb.com/docs/usage
@@ -99,7 +104,4 @@ Copy the resulting URL (it usually ends in `4000`)
 Paste the text into a browser
 The site should run!
 
-## Special thanks on the video
-Butterfly video by David Clausen from Pexels
-Hummingbird photo by Photo by Bryan Hanson on Unsplash
-  
+
