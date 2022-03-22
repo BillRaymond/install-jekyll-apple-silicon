@@ -102,10 +102,13 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-**/.DS_Store
 .bundle/
 vendor/
+
+# optional for macs:
+**/.DS_Store
 ```
+
 
 ### Create a Jekyll site based on the default Minima theme
 You will create a Jekyll site based on the default Minima theme that ships with Jekyll.
