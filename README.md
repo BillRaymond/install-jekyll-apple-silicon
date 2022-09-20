@@ -142,6 +142,12 @@ bundle update
 ```
 bundle exec jekyll serve --livereload
 ```
+
+## To show up draft files
+```
+jekyll serve --draft -- livereload
+```
+
 Copy the resulting URL (it usually ends in `4000`)
 Paste the text into a browser
 The site should run!
