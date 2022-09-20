@@ -127,6 +127,17 @@ bundle install
 bundle update
 ```
 
+or 
+
+Type
+```
+jekyll new <folder_name>
+cd <folder_name>
+bundle add webrick
+bundle install
+bundle update
+```
+
 ## Run the Jekyll site
 ```
 bundle exec jekyll serve --livereload
