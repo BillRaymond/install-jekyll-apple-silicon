@@ -143,9 +143,9 @@ bundle update
 bundle exec jekyll serve --livereload
 ```
 
-## To show up draft files
+## To show up draft files along with main files
 ```
-jekyll serve --draft -- livereload
+jekyll serve --draft --livereload
 ```
 
 Copy the resulting URL (it usually ends in `4000`)
