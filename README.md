@@ -27,7 +27,7 @@ ruby -v
 brew install ruby@3.0
 ```
 
-### Finalzie the Ruby installation
+### Finalize the Ruby installation
 Type:
 ```
 echo $SHELL
