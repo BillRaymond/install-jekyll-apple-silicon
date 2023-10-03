@@ -134,5 +134,3 @@ bundle exec jekyll serve --livereload
 Copy the resulting URL (it usually ends in `4000`)
 Paste the text into a browser
 The site should run!
-
-
